@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+.container{
+  max-width: 500px;
+  padding: 0 2%;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body.purple-mode{
+  background-color: #647299;
+  color: #fff;
+}
+
+.calc-1{
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #252D44;
+}
+
+body.dark-mode {
+  background-color: #E6E6E6;
+}
+
+.calc-2{
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #D3CDCD;
+}
+
+body.roxo-mode {
+  background-color: #17062A;
+  color: #333;
+}
+
+.calc-3{
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #1E0836;
+}
+
+.position{
+  position: absolute;
+  right: 0;
+}
+
+input[type=range]{
+  width: 65px;
+  appearance: none;
+  background: #252D44;
+  transform: scale(1);
+  border-radius: 15px;
+  padding: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb{
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #C23B2D;
+  border-radius: 50%;
+}
+
+h1{
+  color: white;
+  margin-bottom: 15px;
+}
+
+.number{
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  gap: 14px;
+  right: 0;
+  bottom: 27px;
+  list-style: none;
+  padding-right: 8px;
+}
+
+.number li, .flex h3{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.interruptor{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#display{
+  background-color: #181F32;
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: default;
+  box-sizing: border-box;
+  color: white;
+  text-align: end;
+  font-size: 3rem;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.stop {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+input{
+  background-color: #EAE3DB;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #252D44;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.igual{
+  background-color: #C23B2D;
+  color: white;
+  width: 100%;
+}
+
+.reset, .delete{
+  background-color: #647299;
+  color: white;
+}
+
+.reset{
+  width: 100%;
+}
