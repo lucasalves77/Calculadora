@@ -29,7 +29,6 @@ function calculate() {
   let reset = document.getElementById('resete');
   let display = document.getElementById('display');
   let numero = document.querySelectorAll('.numero');
-  let input2 = document.querySelectorAll('.input');
   let soma = document.getElementById('soma'); 
   let positionTema = document.querySelectorAll('.positionTema');
   let backSlider = document.getElementById('backSlider');
@@ -69,7 +68,7 @@ function calculate() {
     soma.classList.add('igualOne');
     slider1.classList.add('sliderOne');
     numero.forEach(function(elemento) {
-      elemento.classList.add('numeroOne');
+      elemento.classList.add('numero');
       elemento.classList.remove('numeroTwo', 'numeroThree');
     });
     positionTema.forEach(function(value) {
@@ -102,7 +101,7 @@ function calculate() {
     slider2.classList.add('sliderTwo');
     numero.forEach(function(elemento) {
       elemento.classList.add('numeroTwo');
-      elemento.classList.remove('numeroOne', 'numeroThree');
+      elemento.classList.remove('numero', 'numeroThree');
     });
     positionTema.forEach(function(value) {
       value.classList.add('temaTwo');
@@ -134,7 +133,7 @@ function calculate() {
     slider3.classList.add('sliderThree');
     numero.forEach(function(elemento) {
       elemento.classList.add('numeroThree');
-      elemento.classList.remove('numeroOne', 'numeroTwo');
+      elemento.classList.remove('numero', 'numeroTwo');
     });
     positionTema.forEach(function(value) {
       value.classList.add('temaThree');

@@ -41,39 +41,6 @@ body.purpleMode{
   width: 100%;
 }
 
-.calculadoraOne{
-  padding: 30px;
-  border-radius: 10px;
-  background-color: #252D44;
-}
-
-.backSwitchOne{
-  background-color: #181F32;
-  font-size: 12px;
-  position: relative;
-  display: flex;
-  gap: 7px;
-  padding: 4px;
-  border-radius: 15px;
-  height: 23px;
-  width: 65px;
-}
-
-.resultOne{
-  background-color: #181F32;
-  width: 100%;
-  padding: 25px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  cursor: default;
-  box-sizing: border-box;
-  color: white;
-  text-align: end;
-  font-size: 3rem;
-  font-weight: 700;
-  border: 1px solid transparent;
-}
-
 .igualOne{
   width: 100%;
   background-color: #C23B2D;
@@ -87,7 +54,7 @@ body.purpleMode{
   border-radius: 50%;
 }
 
-.numeroOne{
+.numero{
   background-color: #E5E4E0;
   width: 100%;
   color: #252D44;
@@ -118,39 +85,6 @@ body.darkMode {
   background-color: #388186;
   color: white;
   width: 100%;
-}
-
-.calculadoraTwo{
-  padding: 30px;
-  border-radius: 10px;
-  background-color: #D3CDCD;
-}
-
-.backSwitchTwo{
-  background-color: #D3CDCD;
-  font-size: 12px;
-  position: relative;
-  display: flex;
-  gap: 7px;
-  padding: 4px;
-  border-radius: 15px;
-  height: 23px;
-  width: 65px;
-}
-
-.resultTwo{
-  background-color: white;
-  width: 100%;
-  padding: 25px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  cursor: default;
-  box-sizing: border-box;
-  color: #35352A;
-  text-align: end;
-  font-size: 3rem;
-  font-weight: 700;
-  border: 1px solid transparent;
 }
 
 .igualTwo{
@@ -200,37 +134,21 @@ body.roxoMode {
   width: 100%;
 }
 
-.calculadoraThree{
+.calculadoraOne, .calculadoraTwo, .calculadoraThree{
   padding: 30px;
   border-radius: 10px;
-  background-color: #1E0837;
 }
 
-.backSwitchThree{
-  background-color: #1E0837;
-  font-size: 12px;
-  position: relative;
-  display: flex;
-  gap: 7px;
-  padding: 4px;
-  border-radius: 15px;
-  height: 23px;
-  width: 65px;
+.calculadoraOne{
+  background-color: #252D44;
 }
 
-.resultThree{
+.calculadoraTwo{
+  background-color: #D3CDCD;
+}
+
+.calculadoraThree{
   background-color: #1E0837;
-  width: 100%;
-  padding: 25px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  cursor: default;
-  box-sizing: border-box;
-  color: #FEE43B;
-  text-align: end;
-  font-size: 3rem;
-  font-weight: 700;
-  border: 1px solid transparent;
 }
 
 .igualThree{
@@ -251,6 +169,58 @@ body.roxoMode {
   color: #FEE43B;
   width: 100%;
 }
+
+.backSwitchOne, .backSwitchTwo, .backSwitchThree{
+  font-size: 12px;
+  position: relative;
+  display: flex;
+  gap: 6px;
+  padding: 4px;
+  border-radius: 15px;
+  height: 23px;
+  width: 65px;
+}
+
+.backSwitchOne{
+  background-color: #181F32;
+}
+
+.backSwitchTwo{
+  background-color: #D3CDCD;
+}
+
+.backSwitchThree{
+  background-color: #1E0837;
+}
+
+.resultOne, .resultTwo, .resultThree{ 
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: default;
+  box-sizing: border-box; 
+  text-align: end;
+  font-size: 3rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.resultOne{
+  background-color: #181F32;
+  color: white;
+}
+
+.resultTwo{
+  background-color: white;
+  color: #35352A;
+}
+
+.resultThree{
+  background-color: #1E0837;
+  color: #FEE43B;
+}
+
 
 .temaThree{
   color: yellow;
@@ -318,8 +288,7 @@ body.roxoMode {
   text-align: center;
   padding: 10px;
   font-size: 1.5rem;
-  font-weight: bold;
-  
+  font-weight: bold;  
   border: 1px solid transparent;
   cursor: pointer;
 }

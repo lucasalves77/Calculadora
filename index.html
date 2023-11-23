@@ -6,34 +6,34 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
-<body>
+<body class="purpleMode">
   <div class="container">
     <div class="interruptor">
-      <h1 id="titulo">Calculator</h1> 
+      <h1 id="titulo" class="tituloOne">Calculator</h1> 
         <div class="position">
           <ul class="tema">
-            <li class="positionTema">1</li>
+            <li class="positionTema temaOne">1</li>
             <li class="positionTema">2</li>
             <li class="positionTema">3</li>
           </ul>  
           <label class="flex">
               <h3 class="positionTema">THEME</h3>
-              <div id="backSlider" class="backSwitch"> 
-                <span id="slider1"><input type="checkbox" class="sliderSwitch" id="range1" onchange="trocarTema('range1')"></span>
+              <div id="backSlider" class="backSwitchOne"> 
+                <span id="slider1" class="sliderOne"><input type="checkbox" class="sliderSwitch" id="range1" onchange="trocarTema('range1')"></span>
                 <span id="slider2"><input type="checkbox" class="sliderSwitch" id="range2" onchange="trocarTema('range2')"></span>
                 <span id="slider3"><input type="checkbox" class="sliderSwitch" id="range3" onchange="trocarTema('range3')"></span>
               </div>
           </label> 
         </div><!--position-->
       </div><!--interruptor-->
-    <input  class="result" id="display" type="text" disabled> 
-    <div id="calculadora">
+    <input  class="resultOne" id="display" type="text" disabled> 
+    <div id="calculadora" class="calculadoraOne">
       <div class="grid">
         <tr>
           <td><input type="button" value="7" class="numero input" onclick="appendToDisplay('7')"></td>
           <td><input type="button" value="8" class="numero input" onclick="appendToDisplay('8')"></td>
           <td><input type="button" value="9" class="numero input" onclick="appendToDisplay('9')"></td>
-          <td><input type="button" value="DEL" class="input" id="delete" onclick="clearLastCharacter()"></td>
+          <td><input type="button" value="DEL" class="input deleteOne" id="delete" onclick="clearLastCharacter()"></td>
         </tr>
         <tr>
           <td><input type="button" value="4" class="numero input" onclick="appendToDisplay('4')"></td>
@@ -55,8 +55,8 @@
         </tr>
       </div>
         <div class="stop">
-          <input type="button" value="RESET" class="input" id="resete" onclick="clearDisplay()"></input>
-          <input type="button" value="=" class="input igual" id="soma" onclick="calculate()"></input>
+          <input type="button" value="RESET" class="input resetOne" id="resete" onclick="clearDisplay()"></input>
+          <input type="button" value="=" class="input igualOne" id="soma" onclick="calculate()"></input>
         </div>
     </div>
     </div>
