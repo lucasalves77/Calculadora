@@ -17,6 +17,8 @@
   transform: translate(-50%, -50%);
 }
 
+/*-----PRIMEIRO TEMA-----*/
+
 body.purpleMode{
   background-color: #3B4664;
   color: #fff;
@@ -45,12 +47,64 @@ body.purpleMode{
   background-color: #252D44;
 }
 
+.backSwitchOne{
+  background-color: #181F32;
+  font-size: 12px;
+  position: relative;
+  display: flex;
+  gap: 7px;
+  padding: 4px;
+  border-radius: 15px;
+  height: 23px;
+  width: 65px;
+}
+
+.resultOne{
+  background-color: #181F32;
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: default;
+  box-sizing: border-box;
+  color: white;
+  text-align: end;
+  font-size: 3rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.igualOne{
+  width: 100%;
+  background-color: #C23B2D;
+  color: white;
+}
+
+.sliderOne {
+  background-color: #C23B2D;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.numeroOne{
+  background-color: #E5E4E0;
+  width: 100%;
+  color: #252D44;
+}
+
+.temaOne{
+  color: white;
+}
+
+/*-----SEGUNDO TEMA-----*/
+
 body.darkMode {
   background-color: #E6E6E6;
 }
 
 .tituloTwo{
-  color: white;
+  color: #35352A;
   font-size: 1.4rem;
 }
 
@@ -72,13 +126,65 @@ body.darkMode {
   background-color: #D3CDCD;
 }
 
+.backSwitchTwo{
+  background-color: #D3CDCD;
+  font-size: 12px;
+  position: relative;
+  display: flex;
+  gap: 7px;
+  padding: 4px;
+  border-radius: 15px;
+  height: 23px;
+  width: 65px;
+}
+
+.resultTwo{
+  background-color: white;
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: default;
+  box-sizing: border-box;
+  color: #35352A;
+  text-align: end;
+  font-size: 3rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.igualTwo{
+  width: 100%;
+  background-color: #C85401;
+  color: white;
+}
+
+.sliderTwo {
+  background-color: #C85401;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.numeroTwo{
+  background-color: #E5E4E0;
+  color: #35352A;
+  width: 100%;
+}
+
+.temaTwo{
+  color: #35352A;
+}
+
+/*-----TERCEIRO TEMA-----*/
+
 body.roxoMode {
   background-color: #17062A;
   color: #333;
 }
 
 .tituloThree{
-  color: white;
+  color: #FEE43B;
   font-size: 1.4rem;
 }
 
@@ -100,6 +206,56 @@ body.roxoMode {
   background-color: #1E0837;
 }
 
+.backSwitchThree{
+  background-color: #1E0837;
+  font-size: 12px;
+  position: relative;
+  display: flex;
+  gap: 7px;
+  padding: 4px;
+  border-radius: 15px;
+  height: 23px;
+  width: 65px;
+}
+
+.resultThree{
+  background-color: #1E0837;
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: default;
+  box-sizing: border-box;
+  color: #FEE43B;
+  text-align: end;
+  font-size: 3rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.igualThree{
+  width: 100%;
+  background-color: #00DECF;
+  color: #1E0837;
+}
+
+.sliderThree {
+  background-color: #00DECF;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.numeroThree{
+  background-color: #331B4D;
+  color: #FEE43B;
+  width: 100%;
+}
+
+.temaThree{
+  color: yellow;
+}
+
 .tema{
   position: absolute;
   display: flex;
@@ -115,25 +271,6 @@ body.roxoMode {
 .position{
   position: absolute;
   right: 0;
-}
-
-.backSwitch{
-  background-color: #181F32;
-  font-size: 12px;
-  position: relative;
-  display: flex;
-  gap: 7px;
-  padding: 4px;
-  border-radius: 15px;
-  height: 23px;
-  width: 65px;
-}
-
-.slider {
-  background-color: #C23B2D;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
 }
 
 .sliderSwitch{
@@ -162,21 +299,6 @@ body.roxoMode {
   font-weight: bold;
 }
 
-.result{
-  background-color: #181F32;
-  width: 100%;
-  padding: 25px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  cursor: default;
-  box-sizing: border-box;
-  color: white;
-  text-align: end;
-  font-size: 3rem;
-  font-weight: 700;
-  border: 1px solid transparent;
-}
-
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -197,27 +319,12 @@ body.roxoMode {
   padding: 10px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #252D44;
+  
   border: 1px solid transparent;
   cursor: pointer;
 }
 
-.numero{
-  background-color: #EAE3DB;
-}
 
-.igual{
-  width: 100%;
-}
 
-.delete{
-  background-color: #647299;
-  color: white;
-  width: 100%;
-}
 
-.reset{
-  background-color: #647299;
-  color: white;
-  width: 100%;
-}
+
