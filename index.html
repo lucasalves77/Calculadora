@@ -33,7 +33,7 @@
           <td><input type="button" value="7" class="numero input" onclick="appendToDisplay('7')"></td>
           <td><input type="button" value="8" class="numero input" onclick="appendToDisplay('8')"></td>
           <td><input type="button" value="9" class="numero input" onclick="appendToDisplay('9')"></td>
-          <td><input type="button" value="DEL" id="reset" class="input" onclick="clearLastCharacter()"></td>
+          <td><input type="button" value="DEL" class="input" id="delete" onclick="clearLastCharacter()"></td>
         </tr>
         <tr>
           <td><input type="button" value="4" class="numero input" onclick="appendToDisplay('4')"></td>
@@ -55,7 +55,7 @@
         </tr>
       </div>
         <div class="stop">
-          <input type="button" value="RESET" id="delete" class="input" onclick="clearDisplay()"></input>
+          <input type="button" value="RESET" class="input" id="resete" onclick="clearDisplay()"></input>
           <input type="button" value="=" class="input igual" id="soma" onclick="calculate()"></input>
         </div>
     </div>

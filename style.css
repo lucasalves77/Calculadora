@@ -22,8 +22,54 @@ body.purpleMode{
   color: #fff;
 }
 
+.tituloOne{
+  color: white;
+  font-size: 1.4rem;
+}
+
+.deleteOne{
+  background-color: #647299;
+  color: white;
+  width: 100%;
+}
+
+.resetOne{
+  background-color: #647299;
+  color: white;
+  width: 100%;
+}
+
+.calculadoraOne{
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #252D44;
+}
+
 body.darkMode {
   background-color: #E6E6E6;
+}
+
+.tituloTwo{
+  color: white;
+  font-size: 1.4rem;
+}
+
+.deleteTwo{
+  background-color: #388186;
+  color: white;
+  width: 100%;
+}
+
+.resetTwo{
+  background-color: #388186;
+  color: white;
+  width: 100%;
+}
+
+.calculadoraTwo{
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #D3CDCD;
 }
 
 body.roxoMode {
@@ -31,14 +77,27 @@ body.roxoMode {
   color: #333;
 }
 
-#calculadora,.calculadora{
-  padding: 30px;
-  border-radius: 10px;
-  background-color: #252D44;
+.tituloThree{
+  color: white;
+  font-size: 1.4rem;
 }
 
-.titulo{
+.deleteThree{
+  background-color: #56077C;
   color: white;
+  width: 100%;
+}
+
+.resetThree{
+  background-color: #56077C;
+  color: white;
+  width: 100%;
+}
+
+.calculadoraThree{
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #1E0837;
 }
 
 .tema{
@@ -71,7 +130,7 @@ body.roxoMode {
 }
 
 .slider {
-  background-color: orange;
+  background-color: #C23B2D;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -114,6 +173,7 @@ body.roxoMode {
   color: white;
   text-align: end;
   font-size: 3rem;
+  font-weight: 700;
   border: 1px solid transparent;
 }
 
@@ -150,7 +210,13 @@ body.roxoMode {
   width: 100%;
 }
 
-.deleteReset{
+.delete{
+  background-color: #647299;
+  color: white;
+  width: 100%;
+}
+
+.reset{
   background-color: #647299;
   color: white;
   width: 100%;
