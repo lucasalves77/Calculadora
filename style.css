@@ -17,21 +17,21 @@
   transform: translate(-50%, -50%);
 }
 
-body.purple-mode{
+body.purpleMode{
   background-color: #3B4664;
   color: #fff;
 }
 
-body.dark-mode {
+body.darkMode {
   background-color: #E6E6E6;
 }
 
-body.roxo-mode {
+body.roxoMode {
   background-color: #17062A;
   color: #333;
 }
 
-.calculadora{
+#calculadora,.calculadora{
   padding: 30px;
   border-radius: 10px;
   background-color: #252D44;
@@ -39,18 +39,18 @@ body.roxo-mode {
 
 .titulo{
   color: white;
-  margin-bottom: 15px;
 }
 
-.number{
+.tema{
   position: absolute;
   display: flex;
-  justify-content: space-around;
   gap: 14px;
   right: 0;
   bottom: 27px;
   list-style: none;
-  padding-right: 8px;
+  margin-right: 9px;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .position{
@@ -58,26 +58,30 @@ body.roxo-mode {
   right: 0;
 }
 
-.range-1[type=range]{
-  width: 65px;
-  appearance: none;
-  background: #252D44;
-  transform: scale(1);
+.backSwitch{
+  background-color: #181F32;
+  font-size: 12px;
+  position: relative;
+  display: flex;
+  gap: 7px;
+  padding: 4px;
   border-radius: 15px;
-  padding: 3px;
+  height: 23px;
+  width: 65px;
 }
 
-.range-2::-webkit-slider-thumb{
-  appearance: none;
-  width: 15px;
-  height: 15px;
-  background: #C23B2D;
+.slider {
+  background-color: orange;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
 }
 
-.number li, .flex h3{
-  font-size: 0.8rem;
-  font-weight: bold;
+.sliderSwitch{
+  opacity: 0;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
 }
 
 .interruptor{
@@ -85,12 +89,18 @@ body.roxo-mode {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .flex{
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.flex h3{
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .result{
@@ -104,6 +114,7 @@ body.roxo-mode {
   color: white;
   text-align: end;
   font-size: 3rem;
+  border: 1px solid transparent;
 }
 
 .grid{
@@ -120,8 +131,7 @@ body.roxo-mode {
   width: 100%;
 }
 
-input{
-  background-color: #EAE3DB;
+.input{ 
   border-radius: 5px;
   text-align: center;
   padding: 10px;
@@ -132,13 +142,15 @@ input{
   cursor: pointer;
 }
 
+.numero{
+  background-color: #EAE3DB;
+}
+
 .igual{
-  background-color: #C23B2D;
-  color: white;
   width: 100%;
 }
 
-.delete-reset{
+.deleteReset{
   background-color: #647299;
   color: white;
   width: 100%;

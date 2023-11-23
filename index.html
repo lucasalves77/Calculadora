@@ -11,14 +11,18 @@
     <div class="interruptor">
       <h1 id="titulo">Calculator</h1> 
         <div class="position">
-          <ul class="number">
+          <ul class="tema">
             <li>1</li>
             <li>2</li>
             <li>3</li>
           </ul>  
           <label class="flex">
               <h3>THEME</h3>
-              <input type="range" min="1" max="3" value="1" id="theme-slider">
+              <div id="backSlider" class="backSwitch"> 
+                <span id="slider1" class="slider"><input type="checkbox" class="sliderSwitch" id="range1" onchange="trocarTema('range1')"></span>
+                <span id="slider2"><input type="checkbox" class="sliderSwitch" id="range2" onchange="trocarTema('range2')"></span>
+                <span id="slider3"><input type="checkbox" class="sliderSwitch" id="range3" onchange="trocarTema('range3')"></span>
+              </div>
           </label> 
         </div><!--position-->
       </div><!--interruptor-->
@@ -26,33 +30,33 @@
     <div id="calculadora">
       <div class="grid">
         <tr>
-          <td><input type="button" value="7" id="number" onclick="appendToDisplay('7')"></td>
-          <td><input type="button" value="8" id="number" onclick="appendToDisplay('8')"></td>
-          <td><input type="button" value="9" id="number" onclick="appendToDisplay('9')"></td>
-          <td><input type="button" value="DEL" id="number" class="delete-reset" onclick="clearLastCharacter() "></td>
+          <td><input type="button" value="7" class="numero input" onclick="appendToDisplay('7')"></td>
+          <td><input type="button" value="8" class="numero input" onclick="appendToDisplay('8')"></td>
+          <td><input type="button" value="9" class="numero input" onclick="appendToDisplay('9')"></td>
+          <td><input type="button" value="DEL" id="reset" class="input" onclick="clearLastCharacter()"></td>
         </tr>
         <tr>
-          <td><input type="button" value="4" id="number" onclick="appendToDisplay('4')"></td>
-          <td><input type="button" value="5" id="number" onclick="appendToDisplay('5')"></td>
-          <td><input type="button" value="6" id="number" onclick="appendToDisplay('6')"></td>
-          <td><input type="button" value="+" id="number" onclick="appendToDisplay('+')"></td>
+          <td><input type="button" value="4" class="numero input" onclick="appendToDisplay('4')"></td>
+          <td><input type="button" value="5" class="numero input" onclick="appendToDisplay('5')"></td>
+          <td><input type="button" value="6" class="numero input" onclick="appendToDisplay('6')"></td>
+          <td><input type="button" value="+" class="numero input" onclick="appendToDisplay('+')"></td>
         </tr>
         <tr>
-          <td><input type="button" value="1" id="number" onclick="appendToDisplay('1')"></td>
-          <td><input type="button" value="2" id="number" onclick="appendToDisplay('2')"></td>
-          <td><input type="button" value="3" id="number" onclick="appendToDisplay('3')"></td>
-          <td><input type="button" value="-" id="number" onclick="appendToDisplay('-')"></td>
+          <td><input type="button" value="1" class="numero input" onclick="appendToDisplay('1')"></td>
+          <td><input type="button" value="2" class="numero input" onclick="appendToDisplay('2')"></td>
+          <td><input type="button" value="3" class="numero input" onclick="appendToDisplay('3')"></td>
+          <td><input type="button" value="-" class="numero input" onclick="appendToDisplay('-')"></td>
         </tr>
         <tr>
-          <td><input type="button" value="." id="number" onclick="appendToDisplay('.')"></td>
-          <td><input type="button" value="0" id="number" onclick="appendToDisplay('0')"></td>
-          <td><input type="button" value="/" id="number" onclick="appendToDisplay('/')"></td>
-          <td><input type="button" value="x" id="number" onclick="appendToDisplay('*')"></td>
+          <td><input type="button" value="." class="numero input" onclick="appendToDisplay('.')"></td>
+          <td><input type="button" value="0" class="numero input" onclick="appendToDisplay('0')"></td>
+          <td><input type="button" value="/" class="numero input" onclick="appendToDisplay('/')"></td>
+          <td><input type="button" value="x" class="numero input" onclick="appendToDisplay('*')"></td>
         </tr>
       </div>
         <div class="stop">
-          <input type="button" value="RESET" class="delete-reset" onclick="clearDisplay()"></input>
-          <input type="button" value="=" class="igual" onclick="calculate()"></input>
+          <input type="button" value="RESET" id="delete" class="input" onclick="clearDisplay()"></input>
+          <input type="button" value="=" class="input igual" id="soma" onclick="calculate()"></input>
         </div>
     </div>
     </div>
